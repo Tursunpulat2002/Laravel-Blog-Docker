@@ -5,7 +5,11 @@ A pretty simplified Docker Compose workflow that sets up a LEMP network of conta
 
 To get started, make sure you have [Docker installed](https://docs.docker.com/docker-for-mac/install/) on your system, and then clone this repository.
 
+Cd to your folder, run `docker-compose run --rm composer install`, run `docker-compose run --rm npm install`
+
 Next, navigate in your terminal to the directory you cloned this, and spin up the containers for the web server by running `docker-compose up -d --build app`.
+
+Go to (http://docker-compose-laravel) or (https://docker-compose-laravel). If it doesn't work, in root of your computer `cd /etc` then open hosts and at the bottem add `127.0.0.1 docker-compose-laravel`.
 
 After that completes, follow the steps from the [src/README.md](src/README.md) file to get your Laravel project added in (or create a new blank one).
 
